@@ -1,0 +1,18 @@
+Type;Selected;Alternative;Part Number
+DC-DC 3V3;TPS6215x;;
+DC-DC 12V;LMR62014;;
+Input Power Controller;;LT4351;
+Li-Ion Protection;AP9101C ;;
+Li-Ion Linear Charger;MCP73841-4.1;BQ25050;
+;;;
+ESP32;;;
+Lock;;;
+LED;;;
+Buzzer;;;
+;;;
+Connectors;;;
+For Lock;;;
+For RFID;;;
+For Power;;;
+For flash programming;;;
+For Li-Ion Battery;;;
