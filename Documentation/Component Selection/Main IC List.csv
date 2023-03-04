@@ -1,18 +1,20 @@
-Type;Selected;Alternative;Part Number
-DC-DC 3V3;TPS6215x;;
-DC-DC 12V;LMR62014;;
-Input Power Controller;;LT4351;
-Li-Ion Protection;AP9101C ;;
-Li-Ion Linear Charger;MCP73841-4.1;BQ25050;
-;;;
-ESP32;;;
-Lock;;;
-LED;;;
-Buzzer;;;
-;;;
-Connectors;;;
-For Lock;;;
-For RFID;;;
-For Power;;;
-For flash programming;;;
-For Li-Ion Battery;;;
+Type;Selected;In Kikad Lib;Alternative;Part Number;Comment
+DC-DC 3V3;TPS62152;TPS62152;;TPS62152RGTR;
+DC-DC 12V;LMR62014;LMR62014XMF;;LMR62014XMF/NOPB;
+Input Power Controller;TPS2120YFPT;Missing;LT4351,DZDH0401DW-7,;ZXGD3111N7TC;
+Li-Ion Protection;AP9101C ;AP9101CK;;AP9101CK6-ANTRG1;
+Li-Ion Linear Charger;MCP73841-4.1;MCP73841-410I/UN;BQ25050;MCP73841-410I/UN;10 pin
+;;;;;
+ESP32;;ESP32-WROOM-32;;ESP32-WROOM-32E-N4;
+Lock;;;;;
+LED;;;;;
+Buzzer;;Missing;;;
+RFID;PN532;;;;
+;;;;;
+Connectors;;;;;
+For Lock;;;;;
+For RFID;;;;;
+For Power;;;;;
+For flash programming;;;;;
+For Li-Ion Battery;;;;;
+For LED;;;;;

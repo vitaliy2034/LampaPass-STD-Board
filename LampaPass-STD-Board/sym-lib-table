@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LampaPass_Power_Management")(type "KiCad")(uri "${KIPRJMOD}/Libraries/LampaPass_Power_Management.kicad_sym")(options "")(descr ""))
+)
