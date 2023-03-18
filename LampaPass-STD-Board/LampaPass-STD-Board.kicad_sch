@@ -1,5 +1,48 @@
 (kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 40e9029c-44bc-48bf-a2b7-1f2f10ba39ad)
+
   (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 120.65 115.57) (size 53.34 8.89) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 255 60 0 1.0000))
+    (uuid 0058c2ef-8859-4e82-877a-7a617b86994e)
+    (property "Sheetname" "Battery Charging Module" (at 120.65 114.8584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Battery_Charging_Module.kicad_sch" (at 120.65 125.0446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "LampaPass-STD-Board"
+        (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 120.65 91.44) (size 53.34 8.89) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 255 8 88 1.0000))
+    (uuid bce22586-a181-4165-bb12-b6e83c445bf7)
+    (property "Sheetname" "Backup Power Module" (at 120.65 90.0934 0)
+      (effects (font (size 2.54 2.54)) (justify left bottom))
+    )
+    (property "Sheetfile" "Backup_Power_Module.kicad_sch" (at 120.65 100.9146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "LampaPass-STD-Board"
+        (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
 )
