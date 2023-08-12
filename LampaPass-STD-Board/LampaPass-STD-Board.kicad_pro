@@ -334,6 +334,10 @@
     [
       "0058c2ef-8859-4e82-877a-7a617b86994e",
       "Battery Charging Module"
+    ],
+    [
+      "aabf55da-2a99-486f-a991-1a1ec0223dda",
+      "MCU_Peripheral_Module"
     ]
   ],
   "text_variables": {}
