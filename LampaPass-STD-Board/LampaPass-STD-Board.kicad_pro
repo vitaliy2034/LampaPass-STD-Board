@@ -232,7 +232,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "error",
@@ -329,15 +329,11 @@
     ],
     [
       "bce22586-a181-4165-bb12-b6e83c445bf7",
-      "Backup Power Module"
-    ],
-    [
-      "0058c2ef-8859-4e82-877a-7a617b86994e",
-      "Battery Charging Module"
+      "Battery & Backup Power Module"
     ],
     [
       "aabf55da-2a99-486f-a991-1a1ec0223dda",
-      "MCU_Peripheral_Module"
+      "MCU & Periphery Module"
     ]
   ],
   "text_variables": {}
