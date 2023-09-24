@@ -372,11 +372,11 @@
         )
       )
     )
-    (symbol "Device:Q_PMOS_GDS" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+    (symbol "Device:Q_PMOS_GSD" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
       (property "Reference" "Q" (at 5.08 1.27 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "Q_PMOS_GDS" (at 5.08 -1.27 0)
+      (property "Value" "Q_PMOS_GSD" (at 5.08 -1.27 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
       (property "Footprint" "" (at 5.08 2.54 0)
@@ -388,10 +388,10 @@
       (property "ki_keywords" "transistor PMOS P-MOS P-MOSFET" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "P-MOSFET transistor, gate/drain/source" (at 0 0 0)
+      (property "ki_description" "P-MOSFET transistor, gate/source/drain" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Q_PMOS_GDS_0_1"
+      (symbol "Q_PMOS_GSD_0_1"
         (polyline
           (pts
             (xy 0.254 0)
@@ -502,17 +502,17 @@
           (fill (type outline))
         )
       )
-      (symbol "Q_PMOS_GDS_1_1"
+      (symbol "Q_PMOS_GSD_1_1"
         (pin input line (at -5.08 0 0) (length 2.54)
           (name "G" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 2.54 5.08 270) (length 2.54)
-          (name "D" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
         (pin passive line (at 2.54 -5.08 90) (length 2.54)
           (name "S" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 2.54 5.08 270) (length 2.54)
+          (name "D" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1802,7 +1802,7 @@
     (property "Datasheet" "" (at 180.34 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f650a4cf-b85c-49cc-9930-11c55e59f69a))
+    (pin "1" (uuid c2ea6d4a-6d32-4ee0-92f8-83bf6db1bbf5))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -1827,8 +1827,8 @@
     (property "Datasheet" "~" (at 133.35 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5021af9e-fe2f-4019-b4d0-91605aa70e96))
-    (pin "2" (uuid 0135f0f8-ddff-4242-bf9f-b52a58100f05))
+    (pin "1" (uuid 23af3ac3-f05f-4a62-bce5-64dfa9416b60))
+    (pin "2" (uuid 6b3c5e77-e3e6-48c3-943f-a959fe53454b))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -1853,8 +1853,8 @@
     (property "Datasheet" "~" (at 195.58 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 28baf17d-5ba0-4660-b2cb-382ec65423df))
-    (pin "2" (uuid 016ac99b-9f98-4e12-81fa-c6e7dc3c0a9f))
+    (pin "1" (uuid 1a243f95-00bc-440f-b57a-a1be7ed1f360))
+    (pin "2" (uuid 30087f7c-a84e-4aa0-87df-da287f8bf390))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -1879,7 +1879,7 @@
     (property "Datasheet" "" (at 194.31 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 261f3fdd-9ce3-44e1-a2b6-495f149747c9))
+    (pin "1" (uuid c038ccb8-f0cc-4e93-89a7-c1b0037cd9c4))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -1909,16 +1909,16 @@
     (property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/21823D.pdf" (at 252.73 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9514a826-0244-4ca0-913b-aa56d9cbda7d))
-    (pin "10" (uuid bde60574-5ad7-45f7-b0c0-69ec271fd82b))
-    (pin "2" (uuid 35dab2a0-b79f-49ec-bc68-ff95161f631f))
-    (pin "3" (uuid 902e4d57-64c8-48a5-be6f-2b6a29d8138f))
-    (pin "4" (uuid 2af1d7a9-bcbc-47c3-aebf-a3cb5d497680))
-    (pin "5" (uuid d0a177b0-b985-4dc3-bacc-94d790334925))
-    (pin "6" (uuid bd9bf57b-b602-48ea-b8e9-52af01bb9bc4))
-    (pin "7" (uuid ff31a64f-954f-47b5-aea4-9f3f23f01775))
-    (pin "8" (uuid 6dbe0191-f421-41b0-9f04-4bf86fbdf708))
-    (pin "9" (uuid b7e88329-11ed-4336-8f75-b37e5c14d283))
+    (pin "1" (uuid 58968998-bd26-453e-b724-77761343a334))
+    (pin "10" (uuid b814e81b-41c7-4d17-bfd0-247a6d055f07))
+    (pin "2" (uuid cafb166f-7cce-4a81-9ef1-0859a18b511c))
+    (pin "3" (uuid fd22971d-f080-4929-9cf9-fb2748882cc5))
+    (pin "4" (uuid 8b6260aa-df84-46ce-a1e2-4171f1c03b84))
+    (pin "5" (uuid 48c9f041-051d-4783-9b68-2da900c3c194))
+    (pin "6" (uuid c00c2cb4-1b6f-4c09-960f-6f58d1f87db2))
+    (pin "7" (uuid 61b13d55-7f80-4b2f-ab39-b8162034dfea))
+    (pin "8" (uuid f6b725ac-e259-47f3-9e9b-2a3ae95b9d0c))
+    (pin "9" (uuid cd7c2d3c-84b9-4f76-8761-6a3382948aa0))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -1942,7 +1942,7 @@
     (property "Value" "Termistor" (at 251.46 137.16 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 251.46 139.7 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 251.46 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 251.46 139.7 0)
@@ -1951,8 +1951,11 @@
     (property "Коментарий" "Для https://www.digikey.com/en/products/detail/murata-electronics/NXFT15XV103FEAB050/13904947" (at 251.46 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 96cb37d9-a420-4e76-8df7-c11aabeb77be))
-    (pin "2" (uuid 7f02ddf1-d475-4721-a5b1-e602908d5df6))
+    (property "PartNamber" "PLS-2 " (at 251.46 139.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 441b169f-431c-4371-8d6e-944da4245c8d))
+    (pin "2" (uuid ca31daba-cf9e-4e63-9e20-5a11f2366cc3))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -1982,26 +1985,26 @@
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2120.pdf" (at 204.47 20.32 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (pin "A1" (uuid 2f1f1b8a-a103-451c-99bc-9417290005d4))
-    (pin "A2" (uuid 01dad9fe-1081-4d0c-99ad-8ff7a3872fcb))
-    (pin "A3" (uuid 4f5e20d0-ddd1-4743-b8e9-143ffebc6c29))
-    (pin "A4" (uuid fb1d3e63-6384-4ece-a111-9621db1829de))
-    (pin "B3" (uuid 63388616-ca4c-43dd-a456-0cf524f11439))
-    (pin "C2" (uuid 1ac75f6e-60f4-4d9d-8926-2b26221c1a73))
-    (pin "E1" (uuid 24cce4c5-b973-4af9-98e9-7ec098e7a427))
-    (pin "E2" (uuid f4f7da90-4d23-4e40-a5fd-9e7ace41fb5b))
-    (pin "E3" (uuid b226e126-af21-47e8-8e6b-e1ffc15a76ad))
-    (pin "E4" (uuid b367d525-4b32-49cf-97a5-ef8b512530da))
-    (pin "B1" (uuid 1c0d08cd-d916-471a-b5a3-820b66870815))
-    (pin "B2" (uuid 18de36b3-e390-4993-bbb1-3ceb7f593e7b))
-    (pin "B4" (uuid b516e275-55f1-47cc-9db1-200533027c30))
-    (pin "C1" (uuid 701e30e8-d894-49a9-bdcd-275332f237a3))
-    (pin "C3" (uuid 405407b9-e6f1-44bd-a022-5ad78ddf03c4))
-    (pin "C4" (uuid dfa35443-58ed-4309-8cd3-0e20b9107c09))
-    (pin "D1" (uuid a3b197ff-237d-4189-bb00-abd5d2e005e3))
-    (pin "D2" (uuid e4f995a4-bf5f-4ba0-8d8d-807ffd27ad00))
-    (pin "D3" (uuid af5eab03-7487-46bb-a553-66aa04bb42cb))
-    (pin "D4" (uuid 038993eb-6874-45cf-8927-158f49ecb022))
+    (pin "A1" (uuid 40139dd6-be76-4bcf-bf10-40e91db584b1))
+    (pin "A2" (uuid 82310382-a4d3-44c0-bf84-a3d07a1123ca))
+    (pin "A3" (uuid 9a841280-c85a-4602-b02b-ed19421eab97))
+    (pin "A4" (uuid 975e6fe2-1f8a-4657-8b70-d43e09f8bf49))
+    (pin "B3" (uuid e5e48316-76fd-4b08-bfc6-b1de5da11cc0))
+    (pin "C2" (uuid fc9d00df-fcf6-4058-b526-5371c5f77450))
+    (pin "E1" (uuid a84aefdb-bf39-485c-8116-f3b5676ae9fc))
+    (pin "E2" (uuid a90fc54c-c20f-4faa-bccb-36ca077d7540))
+    (pin "E3" (uuid 00f2a2a4-441e-4d6c-bcba-622915eb7ae8))
+    (pin "E4" (uuid 39f88c18-cd73-462c-977d-680dd2a47bc6))
+    (pin "B1" (uuid a4269341-10c3-4b6e-b517-3de86b3091d2))
+    (pin "B2" (uuid 38d4381c-c3c1-4e53-ae6b-8a8141de52b3))
+    (pin "B4" (uuid 1be288f4-45e9-433d-91a3-45b5dc139646))
+    (pin "C1" (uuid f3ae9561-77a7-4fb5-b3ba-93e2d37bc2ce))
+    (pin "C3" (uuid f9945fb2-1315-41f1-8a32-84e632c5f8f4))
+    (pin "C4" (uuid c7342c62-ddee-492b-86c6-24fe6bf2bdcc))
+    (pin "D1" (uuid 15607155-4484-4006-a352-c39ac25d0db3))
+    (pin "D2" (uuid 9f391265-f743-47cd-b2fb-68da701970d7))
+    (pin "D3" (uuid daaa1dfa-ceee-4b4c-87bb-9e11ad1b987c))
+    (pin "D4" (uuid 6b54a03b-013b-46e8-8182-74d74143dbb0))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2026,7 +2029,7 @@
     (property "Datasheet" "" (at 152.4 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8e9f5108-a3b7-46cd-9d83-049c238c5c69))
+    (pin "1" (uuid 4e09345f-1ae9-4348-a5fa-5a32e9019ed9))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2056,7 +2059,7 @@
     (property "Datasheet" "" (at 96.52 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 87f4ed19-ab5e-4e55-a76b-06f7c42bca3e))
+    (pin "1" (uuid cf8cb36c-193a-42d4-adba-320e80cf683d))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2081,7 +2084,7 @@
     (property "Datasheet" "" (at 195.58 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 00e70db6-daf6-4b7c-9918-a6411b4e2b7a))
+    (pin "1" (uuid 15b66516-0a77-4828-8bcc-7e30b6bdd2ac))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2106,8 +2109,8 @@
     (property "Datasheet" "~" (at 210.82 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 10cd60d3-0fcf-43ad-8c4f-98e49463c0bf))
-    (pin "2" (uuid 92af4dc2-4d9f-4d88-b473-6a1b69c6b6cf))
+    (pin "1" (uuid a2c181c8-6bd3-4329-966f-29e093a5891a))
+    (pin "2" (uuid 2ee0f1a0-ac2f-4dab-9436-9bc5700eb7cf))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2137,7 +2140,7 @@
     (property "Datasheet" "" (at 220.98 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4aade1ef-abfd-46b2-8b1e-4ed5a951f868))
+    (pin "1" (uuid 3b587863-5f57-46fd-80ee-9923ffc538c0))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2167,8 +2170,8 @@
     (property "Datasheet" "~" (at 96.52 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6a19f5ce-2009-40f6-9be5-958d474d9d36))
-    (pin "2" (uuid dbbf2723-31aa-4689-b598-bda6c15b5b56))
+    (pin "1" (uuid 20f15ab5-5233-4f64-8813-1684fa92431a))
+    (pin "2" (uuid c4380830-3dbb-4bfd-9666-f44ecfc320ce))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2193,8 +2196,8 @@
     (property "Datasheet" "~" (at 83.82 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7fd6f483-88cf-4956-8c04-df3492daa2f4))
-    (pin "2" (uuid 3a77fac8-ea5c-43ae-b0c8-96a76bae0deb))
+    (pin "1" (uuid b09e875c-1010-4302-bf2a-50fe869d9fbe))
+    (pin "2" (uuid 5b652718-3443-458e-b347-cc506305a2a3))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2219,7 +2222,7 @@
     (property "Datasheet" "" (at 76.2 21.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 38f8479c-d99e-4f00-9cbd-7791c1baf5bd))
+    (pin "1" (uuid caa0aa37-c587-411b-95bf-72575113ae26))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2244,8 +2247,8 @@
     (property "Datasheet" "~" (at 133.35 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a44bd7cd-2c27-43e8-80da-d56016d4d20f))
-    (pin "2" (uuid dad5c4a1-31a1-4c9d-ab56-269a4192cd1e))
+    (pin "1" (uuid 01db94f6-26a3-449a-897f-ca9a44761e37))
+    (pin "2" (uuid d1be4e14-1579-4c52-8ea2-c2d27b704167))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2270,8 +2273,8 @@
     (property "Datasheet" "~" (at 149.86 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5a9c33c6-27b4-446c-8f7e-1b0ce11b629f))
-    (pin "2" (uuid 17d343a3-321e-4722-b4ea-49984ce9a5d6))
+    (pin "1" (uuid ca6f3478-d33e-4255-86fc-3a605298d809))
+    (pin "2" (uuid 728f1a6b-5bed-4690-a83f-4addbc93bce0))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2296,8 +2299,8 @@
     (property "Datasheet" "~" (at 220.98 146.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c52f6597-e863-4f91-833d-d656f6a7b9de))
-    (pin "2" (uuid de94a727-01cd-4384-823b-ccd119557f2d))
+    (pin "1" (uuid 75323389-79ee-4adc-a73e-f2b881523efa))
+    (pin "2" (uuid 8fb07c5c-9c90-4e7d-ab83-0f2a2369e5de))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2327,7 +2330,7 @@
     (property "Datasheet" "" (at 209.55 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dcd66b77-7dac-4901-98dd-e2049c975765))
+    (pin "1" (uuid f7aec4ad-276f-4203-9934-e993f278370a))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2351,15 +2354,18 @@
     (property "Value" "Barrel_Jack_Switch" (at 62.23 26.67 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 63.5 34.036 0)
+    (property "Footprint" "Connector_BarrelJack:BarrelJack_Kycon_KLDX-0202-xC_Horizontal" (at 63.5 34.036 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 63.5 34.036 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 11ee31af-63d2-4e5d-bd01-e735447319b4))
-    (pin "2" (uuid 097d9fc7-5c8a-49c8-ab75-3a5a0fca3bd8))
-    (pin "3" (uuid d00ff7c9-6c01-4606-b3aa-e745ad7dfe60))
+    (property "PartNamber" "KLS1-DC-005A-2.5" (at 62.23 33.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b1f4e83a-151d-4854-a08a-3368d8f598fd))
+    (pin "2" (uuid 7f5901bb-d401-498c-82af-d3c9a11b0e4c))
+    (pin "3" (uuid f773536b-aa03-43d0-97ef-c7242c6533d4))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2384,8 +2390,8 @@
     (property "Datasheet" "~" (at 85.09 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 62a633cd-1020-4934-bc8b-110d53405c07))
-    (pin "2" (uuid b453fd4c-5fa7-4323-9b5f-738d994cbfcf))
+    (pin "1" (uuid c9592bc8-4127-4a25-8f20-37fd9a25df82))
+    (pin "2" (uuid 4dd6d989-cc43-480d-850e-259a0d851534))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2409,14 +2415,17 @@
     (property "Value" "D_TVS" (at 115.57 38.1 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 113.03 36.83 0)
+    (property "Footprint" "Diode_SMD:D_SOD-923" (at 113.03 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 113.03 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1e6cca01-3f05-4073-beae-dd700b7887ca))
-    (pin "2" (uuid 0399eb19-0ca3-4211-9811-5f1dbcb71710))
+    (property "PartNamber" "DF2S6.8FS,L3M" (at 113.03 36.83 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6ca0a79a-cce7-46f7-ab08-02b8302b6e8f))
+    (pin "2" (uuid f72df295-feee-4529-aca0-5e916c8c6c13))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2441,8 +2450,8 @@
     (property "Datasheet" "~" (at 66.04 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8972b349-bd4b-49e4-8ad8-76da91993eff))
-    (pin "2" (uuid da0e9e42-3767-455d-a697-8c5b7f53fe49))
+    (pin "1" (uuid b29ee07c-53c6-4b23-bf07-7933c4e4511a))
+    (pin "2" (uuid d8bab969-20d5-495d-9583-588043fa6b67))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2472,7 +2481,7 @@
     (property "Datasheet" "" (at 123.19 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 789f8e08-2709-4a1f-9089-d92d5f4d65ed))
+    (pin "1" (uuid 662d8218-2ff5-4a9f-880d-bbae84e58470))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2497,8 +2506,8 @@
     (property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/F931C475MAA/4004951" (at 262.89 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid beea59f0-448f-4177-85a4-c05b6fcb8d2b))
-    (pin "2" (uuid 0642e07a-aa9a-4625-99a5-a2a509b559d8))
+    (pin "1" (uuid e89ac38a-b424-41c1-a1c2-c415c6807bfb))
+    (pin "2" (uuid 60929ccc-15e6-4bd4-8ed5-417d01fb80eb))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2528,7 +2537,7 @@
     (property "Datasheet" "" (at 262.89 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 11704583-57e8-4655-a671-c59c339a983b))
+    (pin "1" (uuid e06c4a28-b717-4a5c-b1e7-bb3d66a9a85a))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2553,14 +2562,14 @@
     (property "Datasheet" "https://www.onsemi.com/pub/Collateral/FDS6898A-D.PDF" (at 67.31 171.45 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid cc23a2b5-d961-4e13-a2e7-0eaf779ceff7))
-    (pin "2" (uuid ae4b7de9-6c11-4be9-b4d7-b218f36817f9))
-    (pin "7" (uuid e1c14c24-f7a3-4ebc-b7dc-60f6a02aae8b))
-    (pin "8" (uuid 4bf787a1-d1f5-4db8-b3f7-d77ff965145d))
-    (pin "3" (uuid e529302f-b199-40fe-941a-f591dc85ee61))
-    (pin "4" (uuid a291f1d8-5486-4988-bd3c-818ed343cc30))
-    (pin "5" (uuid 0a6441b1-f552-451e-a4e6-a94779f2b36c))
-    (pin "6" (uuid d9fb33f6-7b81-4b73-9ff2-7f7625b75a4f))
+    (pin "1" (uuid cc9ffc0e-6e0d-4f9c-9c84-4f873a4d4a12))
+    (pin "2" (uuid 11bcb6dd-ccf0-4b69-a64a-6f6b2e3273c5))
+    (pin "7" (uuid da960aaa-4a4d-4d5b-9817-5809f713e08e))
+    (pin "8" (uuid 2a69a95d-a19e-4deb-9c1d-25789f623a83))
+    (pin "3" (uuid f0a3fc53-879f-4dbc-a7d6-fb2fc19f5248))
+    (pin "4" (uuid 5ee7c6da-f38b-41a3-976d-2d6c2a6c7f62))
+    (pin "5" (uuid 1fd7943a-74e9-448e-bd9d-1094a9e0a5ef))
+    (pin "6" (uuid 9b81b85f-a710-437c-8208-38561d824458))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2590,14 +2599,14 @@
     (property "Datasheet" "https://www.onsemi.com/pub/Collateral/FDS6898A-D.PDF" (at 78.74 171.45 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid 88d7210e-09b7-4d50-91b1-3dadad617dd1))
-    (pin "2" (uuid 33a454ab-97dd-4893-85db-86057f39dcdc))
-    (pin "7" (uuid 5ef47e9e-5780-43fe-8b9c-615b9fdd9bb1))
-    (pin "8" (uuid 61977339-4d58-4b83-9f9a-45a57d74313a))
-    (pin "3" (uuid 1cdd3b14-7f8e-42df-8b2d-10417c0046d7))
-    (pin "4" (uuid 653369c0-a043-48e7-818e-969b3ae0efe1))
-    (pin "5" (uuid e4d6de0b-91db-4780-ad01-0c4c230072f5))
-    (pin "6" (uuid 9faf8ee8-7a86-4d5b-8ac0-d23aeca999e7))
+    (pin "1" (uuid ca8bd49a-ea93-4f43-896a-174f0790cbbb))
+    (pin "2" (uuid c1914d22-eb69-45f6-aa56-fbfabd87b337))
+    (pin "7" (uuid 23c6d59c-c03f-4557-8b63-6aa0aec0c57f))
+    (pin "8" (uuid d4740a70-4047-4d09-9087-cc66103b950d))
+    (pin "3" (uuid cf937158-0d37-42d1-bd13-161666076c1e))
+    (pin "4" (uuid 40b002cd-d7c9-4825-b1d5-259dd1edca96))
+    (pin "5" (uuid 7005ccf4-f57b-40f2-9e16-0a01a56f3f68))
+    (pin "6" (uuid 6146ead3-968a-4979-8e93-fed37e3c4328))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2627,8 +2636,8 @@
     (property "Datasheet" "~" (at 123.19 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cfdcb1c0-3766-44da-a88e-1ff3d0e5e33f))
-    (pin "2" (uuid 690a86d2-8af7-4727-b685-5a94a4df2cbc))
+    (pin "1" (uuid fc345100-0e9d-4355-9987-6e5d6cc17160))
+    (pin "2" (uuid 9b80880c-9b03-47bb-aa33-c181aa77f1d1))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2653,7 +2662,7 @@
     (property "Datasheet" "" (at 160.02 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0951c643-6e8e-477f-96ec-a023e97b2f36))
+    (pin "1" (uuid 06f5d7a5-4167-40c5-a6c9-d50efc5cce8f))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2672,14 +2681,17 @@
     (property "Value" "Batt_conn" (at 34.29 124.46 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 34.29 127 0)
+    (property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" (at 34.29 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 34.29 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 57fdb98e-88a7-4627-bce9-23d66375b2d6))
-    (pin "2" (uuid 7664c960-db1a-4a72-a933-58763234e4b7))
+    (property "PartNamber" "B2B-XH-AM(LF)(SN) JST" (at 34.29 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid cc121fb8-6d84-4234-80aa-3acf3e229a18))
+    (pin "2" (uuid fd0fc690-41e5-42d0-9275-d740ba6b6a8a))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2709,7 +2721,7 @@
     (property "Datasheet" "" (at 245.11 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cc1fb52d-77bd-49b5-a7c3-028fc292f3aa))
+    (pin "1" (uuid 925a7b5e-4171-41e6-bf5c-fe09324f0cd8))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2739,7 +2751,7 @@
     (property "Datasheet" "" (at 76.2 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e60cf229-4395-4ffe-bef6-851ca14bf088))
+    (pin "1" (uuid 491c9486-c049-4c58-a217-329d481e96d5))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2764,7 +2776,7 @@
     (property "Datasheet" "" (at 113.03 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8f027795-6ed6-43dd-85dc-8c4f18b6f1d8))
+    (pin "1" (uuid c3d8042b-61f9-4a0e-9f33-b897a2564f13))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2789,7 +2801,7 @@
     (property "Datasheet" "" (at 262.89 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 619d5993-c561-4f63-a0ab-a19f4561b1c7))
+    (pin "1" (uuid c352c392-7ef1-4de0-8191-c25088e6909a))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2819,7 +2831,7 @@
     (property "Datasheet" "" (at 205.74 20.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6dfce980-0f46-4f90-80f8-c70585f944b9))
+    (pin "1" (uuid 646757be-77a4-4150-a512-91a1b77756f8))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2844,7 +2856,7 @@
     (property "Datasheet" "" (at 73.66 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 014c8e4b-da4b-40fe-ae75-0cc7f2cb63ee))
+    (pin "1" (uuid 7cbd175f-eab1-4945-bcdf-0c7921b68793))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2869,7 +2881,7 @@
     (property "Datasheet" "" (at 231.14 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2559e527-4748-4684-b99c-7e7776bf2948))
+    (pin "1" (uuid e2d0f870-777f-46a3-89b1-ff1e903d486f))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2899,8 +2911,8 @@
     (property "Datasheet" "~" (at 177.8 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2d07b17e-783c-4536-88a6-c5862160e774))
-    (pin "2" (uuid 9b340e09-e0f2-4e4d-8bf5-594287bb2cae))
+    (pin "1" (uuid f4370645-c9ab-4266-81ac-e6a585384da6))
+    (pin "2" (uuid 88fe8fcf-0d28-44a1-9469-20e42d5b878f))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2930,7 +2942,7 @@
     (property "Datasheet" "" (at 209.55 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3b4b3bbb-77bb-4080-862a-172b188a63cd))
+    (pin "1" (uuid 59915d1b-8de5-44eb-bd9f-52a93d370887))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2955,7 +2967,7 @@
     (property "Datasheet" "" (at 133.35 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d42e8d9f-9c48-4758-9511-96f5fb6f2b98))
+    (pin "1" (uuid 0996078c-62cc-4c5c-804f-211578e031b5))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -2980,8 +2992,8 @@
     (property "Datasheet" "~" (at 123.19 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5dd5db87-6cee-4378-888c-d39eac289e35))
-    (pin "2" (uuid 94bba3f0-740a-44e4-8a25-167f5dac8cbd))
+    (pin "1" (uuid b1fa887a-3638-4c2c-8cbb-5ca4ab995adf))
+    (pin "2" (uuid d182fc2a-6870-499b-8a48-5c093c5c6ba8))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -3006,12 +3018,12 @@
     (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP9101C.pdf" (at 74.93 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 947d5e46-6a6d-4492-bf3a-6deaa069d61c))
-    (pin "2" (uuid d02b2cd2-9e90-4677-be67-4d65474042c0))
-    (pin "3" (uuid 3fd2d915-f745-4e59-85d5-10ecb8e24694))
-    (pin "4" (uuid b580d196-7e48-4671-b03a-9cca9ffac968))
-    (pin "5" (uuid f895ffc5-2665-4b19-b381-1f0a26a4d0d5))
-    (pin "6" (uuid e9dd2d2e-ec16-4590-984c-4e0bf0ed2a24))
+    (pin "1" (uuid 132c5766-ae24-42b0-b86b-79ebc7ad4bcd))
+    (pin "2" (uuid 0d0c842b-26b4-43c4-888d-5251dd2f3893))
+    (pin "3" (uuid 2a1015d4-8826-465b-8c3f-8d37ad7cb57f))
+    (pin "4" (uuid b2311a6b-39ae-4ebb-a639-7ac63eb06a11))
+    (pin "5" (uuid e21ac724-152e-41c4-ba9d-140efd26bedf))
+    (pin "6" (uuid f9f2279d-ae28-45db-8e0e-b5c152c4fa56))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -3041,8 +3053,8 @@
     (property "Datasheet" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B474KO8NNNC/3886720" (at 223.52 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c44a93e5-75ba-4ae0-8108-f0336169544d))
-    (pin "2" (uuid 624db6cd-0c78-4b0a-809c-1c4258bf186a))
+    (pin "1" (uuid 5ff7390f-a7c6-4452-9814-3721ad49aa6b))
+    (pin "2" (uuid b06544c3-870c-4cea-b11d-4c2b49fde20e))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -3072,7 +3084,7 @@
     (property "Datasheet" "" (at 151.13 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4485b827-4da5-4544-ae86-5a14708d3182))
+    (pin "1" (uuid 96c7629f-0877-404f-b3c2-fd8a43189c59))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -3102,7 +3114,7 @@
     (property "Datasheet" "" (at 85.09 176.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 656efeec-3ce0-4606-a354-d24783b7a68e))
+    (pin "1" (uuid 730d0e04-6ac1-42c7-95e4-7db4bc2ce73d))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -3132,8 +3144,8 @@
     (property "Datasheet" "~" (at 172.72 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 23c1ffec-4f0e-49a5-9fd1-9ba95ac9884f))
-    (pin "2" (uuid 2dc9de43-72d5-46b7-bcaf-50a8048e9dff))
+    (pin "1" (uuid 5b7aaac2-1ea7-4245-a41f-b33b9a8c8605))
+    (pin "2" (uuid fa700ae5-abfd-4ba3-b1e6-57dce1df827b))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -3163,7 +3175,7 @@
     (property "Datasheet" "" (at 123.19 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid fc422131-255c-4438-8a53-43e2a159622f))
+    (pin "1" (uuid 0f380128-a45e-4beb-ad2e-8e5980c01243))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -3188,8 +3200,8 @@
     (property "Datasheet" "~" (at 73.66 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c7de47e5-8e8b-4308-a2a3-180fe9f92ad4))
-    (pin "2" (uuid 44b4e922-f71b-413b-a869-95c9e06d7491))
+    (pin "1" (uuid cd1e2423-cc6a-49bd-a80c-574891289e1a))
+    (pin "2" (uuid 90b7b414-ba2a-403a-87ea-748932602ec0))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -3219,8 +3231,8 @@
     (property "Datasheet" "~" (at 209.55 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 404ddbc0-ff84-4d05-bc42-f8ddd6956450))
-    (pin "2" (uuid 4ff9cac3-b762-45b8-add1-7832ff6becbf))
+    (pin "1" (uuid a15cd692-8431-4645-8b0c-95394d44d3ab))
+    (pin "2" (uuid 96861fbc-ab13-495f-9bc1-3ca6ef21eebb))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -3230,24 +3242,27 @@
     )
   )
 
-  (symbol (lib_id "Device:Q_PMOS_GDS") (at 194.31 118.11 270) (mirror x) (unit 1)
+  (symbol (lib_id "Device:Q_PMOS_GSD") (at 194.31 118.11 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e4cc84f0-cd27-46af-a60d-83684d2b1bf2)
     (property "Reference" "Q2" (at 194.31 109.22 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Q_PMOS_GDS" (at 194.31 111.76 90)
+    (property "Value" "AO3401A" (at 194.31 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 196.85 113.03 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-3" (at 196.85 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 194.31 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5af62925-2118-431d-b1ff-aeecbc26a17d))
-    (pin "2" (uuid cdd6a2cb-69fc-4bcb-991f-c22f80db89b5))
-    (pin "3" (uuid 01b35140-be78-4f74-b56c-70e21caf430b))
+    (property "PartNamber" "AO3401A" (at 194.31 118.11 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2492189d-1677-42ff-9ad5-ca2927e34bde))
+    (pin "2" (uuid 6b8419ed-2248-4bed-9e98-9f8eb8f82633))
+    (pin "3" (uuid cc58dc9c-cd59-4f64-8e8e-37c3d5edaf54))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -3277,8 +3292,8 @@
     (property "Datasheet" "https://www.digikey.com/en/products/detail/kyocera-avx/F931C475MAA/4004951" (at 152.4 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b5c18cbb-44fc-4556-89d8-fe115a7699e9))
-    (pin "2" (uuid c30fe08c-866e-4625-b22a-56cb1fbacc70))
+    (pin "1" (uuid 2c8a008b-9511-4469-9fd9-3e81d17dde7f))
+    (pin "2" (uuid 7ebc3e66-706f-4cb6-b185-5dc6712f89d2))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -3308,8 +3323,8 @@
     (property "Datasheet" "~" (at 149.86 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9ba218b4-0bd0-41d2-8e48-e4bb7d21d0b4))
-    (pin "2" (uuid 45cd2dfd-dca0-43d8-98d4-252066c41b17))
+    (pin "1" (uuid ad3a253b-946e-4548-806c-16c9adcffb88))
+    (pin "2" (uuid 42c55fb1-1dbb-42c9-87df-880265dbb0b3))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
@@ -3334,7 +3349,7 @@
     (property "Datasheet" "" (at 83.82 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 251b4ccf-283f-4fb4-9e53-47a9aa711a32))
+    (pin "1" (uuid e8691e8e-78f5-407d-956a-ab02356a28a5))
     (instances
       (project "LampaPass-STD-Board"
         (path "/40e9029c-44bc-48bf-a2b7-1f2f10ba39ad/bce22586-a181-4165-bb12-b6e83c445bf7"
