@@ -2318,7 +2318,7 @@
     (property "Reference" "#PWR06" (at 205.74 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "Bat_line" (at 213.36 132.715 90)
+    (property "Value" "Bat_line" (at 213.36 132.08 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (at 209.55 132.08 0)

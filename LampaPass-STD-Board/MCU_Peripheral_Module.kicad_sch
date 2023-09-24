@@ -1942,7 +1942,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5118a375-278c-47e1-bb6c-27b01a9ec044)
   )
-  (text "Worning \nCan be placed upside down!" (at 19.05 92.71 0)
+  (text "Warning \nCan be placed upside down!" (at 19.05 92.71 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5c990e64-76bb-4b4c-bd18-7e49f0f7f6ea)
   )
